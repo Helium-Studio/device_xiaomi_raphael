@@ -394,6 +394,12 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-service \
     libsensorndkbridge
 
+PRODUCT_PACKAGES += \
+    sensors.udfps
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
 # Shim
 PRODUCT_PACKAGES += \
     libwatermark_shim
