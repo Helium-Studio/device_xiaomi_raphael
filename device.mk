@@ -66,6 +66,21 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fs_config_files
 
+# Init scripts
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.class_main.sh \
+    init.qcom.class_core.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.rc \
+    init.qcom.sh \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh \
+    init.recovery.qcom.rc \
+    init.target.rc \
+    ueventd.qcom.rc
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
